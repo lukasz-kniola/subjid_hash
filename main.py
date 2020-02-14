@@ -17,6 +17,6 @@ def hashid(var, key, hashlen):
         
 dataset['DSUBJID'] = dataset['USUBJID'].apply(hashid,args=('C0mpl3t3Ly+r@nd0m=kEY', 8))
 
-print(dataset)
+print(dataset.to_markdown())
 
 print(dataset.describe())
